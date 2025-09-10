@@ -117,7 +117,7 @@ function App() {
           <p className="text-xl mb-2 font-bold">{TXT[lang].title}</p>
           <p>{TXT[lang].subtitle}</p>
           {lang==='kr'&&
-          (<p className='text-xs text-gray-800'>정답란에 성과이름(예: 홍길동)을 모두 입력해야 해요! <br/>단, 미국이름은 이름만 (예:Eric)</p>)
+          (<p className='text-xs text-gray-800'>정답란에 성과이름(예: 홍길동)을 모두 입력해야 해요! <br/>영어 이름은 다음 중 하나: Eric, Tom, Emi</p>)
           }
           
         </header>
