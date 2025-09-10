@@ -9,7 +9,7 @@ type ResultMap = Record<string, { correct: boolean; accepted: string[] }>;
 const TXT = {
   kr: {
     title: '신입생 환영회 퀴즈!',
-    subtitle: '설명을 보고 누구인지 맞춰보세요',
+    subtitle: '설명을 보고 누구인지 맞춰보세요.',
     language: 'Language',
     inputLabel: '이름 입력',
     inputPlaceholder: '이름을 적어주세요',
@@ -116,6 +116,10 @@ function App() {
         <header className='w-full max-w-md p-4 text-center'>
           <p className="text-xl mb-2 font-bold">{TXT[lang].title}</p>
           <p>{TXT[lang].subtitle}</p>
+          {lang==='kr'&&
+          (<p className='text-xs text-gray-800'>정답란에 성과이름(예: 홍길동)을 모두 입력해야 해요!</p>)
+          }
+          
         </header>
 
         <div className='flex justify-end items-center space-x-2 mb-2'>
