@@ -22,8 +22,8 @@ const TXT = {
     title: 'Welcome Quiz!',
     subtitle: 'Read the hint and guess who it is.',
     language: 'Language',
-    inputLabel: 'Enter name',
-    inputPlaceholder: 'Type a name',
+    inputLabel: 'Who am I?',
+    inputPlaceholder: 'Select a name',
     submit: 'Submit',
     congratsTitle: '🎉 Congratulations!',
     congratsBody: 'You got them all right.\nTell the host!',
@@ -215,7 +215,7 @@ function App() {
           })}
           <button
             type="submit"
-            className="flex-1 rounded bg-white text-black px-4 py-3 block mx-auto"
+            className="flex-1 rounded bg-white text-black px-4 py-3 block mx-auto active:bg-blue-300"
             >
             {TXT[lang].submit}
           </button>

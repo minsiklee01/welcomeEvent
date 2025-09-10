@@ -16,7 +16,7 @@ export const QUIZ: Person[] = [
   { id: 7, hint: '집에서 혼자 쿠키 만드려다가 태웠는데 옆집에서 연기 때문에 불난 줄 알고 신고하셨어요..', hint_en: 'I tried baking cookies alone at home and burned them, and the neighbor reported a fire because of the smoke.', answer: '이서진', answer_en: 'Seo Jin'},
   { id: 8, hint: '저는 레바논, 튀니지에 산 적이 있습니다. 인어공주처럼 바다에서 돌고래와 함께 수영한적이 있습니다.', hint_en: "I've lived in Lebanon and Tunisia. I once swam with dolphins in the sea like the Little Mermaid.", answer: '박준용', answer_en: 'Charlie'},
   { id: 9, hint: '세미 내리막길 구간에서 신나게 보드를 타다 넘어져 1년동안 축구를 하지 못했습니다', hint_en: "I fell while skateboarding down a slight downhill path and couldn't play soccer for a year.", answer: '서지명', answer_en: 'Jimmy'},
-  { id: 10, hint: '어릴적 개미를 잡아먹는 것이 취미였습니다. 기억은 없지만 ㅎㅎ ', hint_en: "As a kid, my hobby was catching and eating ants (I don't remember it, haha).", answer: '미선', answer_en: 'Meesun'},
+  { id: 10, hint: '어릴적 개미를 잡아먹는 것이 취미였습니다. 기억은 없지만 ㅎㅎ ', hint_en: "As a kid, my hobby was catching and eating ants (I don't remember it, haha).", answer: '김미선', answer_en: 'Meesun'},
   { id: 11, hint: '밤따려고 나뭇가지 던졌다가 머리가 찢었었습니다', hint_en: 'I threw a branch to pick chestnuts and ended up splitting my head open.', answer: '김민주', answer_en: 'Minju Kim'},
   { id: 12, hint: '망둥어랑 뽀뽀한적이 있습니다', hint_en: 'I once kissed a mudskipper.', answer: '왕선웅', answer_en: 'Sun Woong'},
   { id: 13, hint: '저는 한국, 헝가리, 독일, 중국에 산 적이 있습니다. 한국에 돌아가면 집이 없습니다', hint_en: "I've lived in Korea, Hungary, Germany, and China. I don't have a home to return to in Korea.", answer: '이찬혁', answer_en: 'Chan Hyuk'},
