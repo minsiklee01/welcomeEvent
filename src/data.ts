@@ -24,7 +24,7 @@ export const QUIZ: Person[] = [
   { id: 15, hint: '슈퍼에서 만원 잃었음', hint_en: 'I once lost 10,000 won at a supermarket.', answer: '채준하', answer_en: 'Joon Ha'},
   { id: 16, hint: '7-8살때 경찰서가서 조사받은적 있습니다', hint_en: 'When I was 7-8 years old, I was questioned at the police station.', answer: '고온유', answer_en: 'On Yu'},
   { id: 17, hint: '비행기를 놓치는 꿈을 꾸고 진짜로 비행기를 놓쳤어요ㅎ', hint_en: 'I dreamed I missed a flight, and then I actually missed a flight (haha).', answer: '박수익', answer_en: 'Sooik'},
-  { id: 18, hint: '인대 하나가 없어져서 군대안가도 한국국적을 받을수 있게 되었어요', hint_en: "I'm missing one ligament and received an exemption from military service for Korean nationality.", answer: '최석현', answer_en: 'Suk Hyun'},
+  { id: 18, hint: 'HS의 성대모사를 할 수 있습니다', hint_en: "I can do HS's voice impersonation", answer: '최석현', answer_en: 'Suk Hyun'},
   { id: 19, hint: '어릴때 당나귀한테 물려서 손가락이 거의 짤릴뻔했다', hint_en: 'When I was little, a donkey bit me and my finger almost got cut off.', answer: ['Emi','도희'], answer_en: 'Emi'},
   { id: 20, hint: '칼로 깊이 벤 손가락을 강력 본드로 봉하고 완쾌 했음', hint_en: 'I sealed a deep knife cut on my finger with super glue and fully recovered.', answer: 'Tom', answer_en: 'Tom'},
   { id: 21, hint: 'I was driving on a bridge when it fell down', hint_en: 'I was driving on a bridge when it collapsed.', answer: 'Eric', answer_en: 'Eric'},
