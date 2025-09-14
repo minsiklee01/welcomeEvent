@@ -28,4 +28,5 @@ export const QUIZ: Person[] = [
   { id: 19, hint: '어릴때 당나귀한테 물려서 손가락이 거의 짤릴뻔했다', hint_en: 'When I was little, a donkey bit me and my finger almost got cut off.', answer: ['Emi','도희'], answer_en: 'Emi'},
   { id: 20, hint: '칼로 깊이 벤 손가락을 강력 본드로 봉하고 완쾌 했음', hint_en: 'I sealed a deep knife cut on my finger with super glue and fully recovered.', answer: 'Tom', answer_en: 'Tom'},
   { id: 21, hint: 'I was driving on a bridge when it fell down', hint_en: 'I was driving on a bridge when it collapsed.', answer: 'Eric', answer_en: 'Eric'},
+  { id: 22, hint: '클라리넷을 5-6년 배웠다', hint_en: 'I studied the clarinet for five or six years.', answer: '김사랑', answer_en:"Sarang"},
 ]
