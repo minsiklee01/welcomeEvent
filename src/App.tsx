@@ -3,7 +3,7 @@ import { QUIZ, type Person } from './data';
 import confetti from  'canvas-confetti';
 import './App.css'
 
-type AnswerMap = Record<string, string>;
+type AnswerMap = Record<number, string>;
 type ResultMap = Record<string, { correct: boolean; accepted: string[] }>;
 
 const TXT = {
@@ -41,8 +41,8 @@ function shuffleOnce<T>(arr: T[]) {
   return a;
 }
 
-function normalize(s: string) {
-  return s.trim().toLowerCase().replace(/\s+/g, '');
+function normalize(s: string | null) {
+  return (s ?? '').trim().toLowerCase().replace(/\s+/g, '');
 }
 
 function isCorrect(input: string, answer: string | string[]) {
@@ -54,9 +54,24 @@ function isCorrect(input: string, answer: string | string[]) {
 function App() {
   const quiz = useMemo<Person[]>(()=> shuffleOnce(QUIZ), []);
   const [answers, setAnswers] = useState<AnswerMap>(() => {
+    // Start with a blank map for the current quiz ids (numeric keys)
+    const base = QUIZ.reduce((acc, p) => { acc[p.id] = ''; return acc; }, {} as AnswerMap);
     const saved = localStorage.getItem('answers');
-    if (saved) return JSON.parse(saved);
-    return quiz.reduce((acc, p) => { acc[p.id] = ''; return acc;}, {} as AnswerMap);
+    if (!saved) return base;
+    try {
+      const parsed = JSON.parse(saved) as Record<string, string>;
+      // Convert string keys back to numbers and merge only known ids
+      const merged: AnswerMap = { ...base };
+      for (const [k, v] of Object.entries(parsed)) {
+        const n = Number(k);
+        if (Number.isFinite(n) && Object.prototype.hasOwnProperty.call(base, n)) {
+          merged[n] = v;
+        }
+      }
+      return merged;
+    } catch {
+      return base;
+    }
   });
   const [submitted, setSubmitted] = useState(false);
   const [results, setResults] = useState<ResultMap>({});
@@ -102,7 +117,7 @@ function App() {
   }
 
   function handleChange(id: number, value: string) {
-    setAnswers(a => ({...a, [id]: value}))
+    setAnswers(a => ({ ...a, [id]: value }));
   }
 
   const correctCount = useMemo(
